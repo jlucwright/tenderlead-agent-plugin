@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tenderlead-agent-plugin",
+  "version": "1.0.0",
+  "description": "Review supplied UK tender documents against a supplier profile before a BID or SKIP decision.",
+  "author": {
+    "name": "Studea Limited",
+    "email": "hello@tenderlead.co.uk",
+    "url": "https://tenderlead.co.uk"
+  },
+  "homepage": "https://tenderlead.co.uk",
+  "repository": "https://github.com/jlucwright/tenderlead-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "tenderlead",
+    "cursor",
+    "skills"
+  ]
+}
