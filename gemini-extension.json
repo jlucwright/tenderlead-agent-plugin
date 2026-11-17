@@ -1,6 +1,6 @@
 {
   "name": "tenderlead",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read your TenderLead brief, find UK tenders and review saved decisions.",
   "mcpServers": {
     "tenderlead": {
@@ -11,11 +11,14 @@
         "get_tender_decision"
       ],
       "oauth": {
-        "enabled": true,
+        "enabled": false,
         "scopes": [
           "briefs:read",
           "tenders:read"
         ]
+      },
+      "headers": {
+        "x-mcp-require-auth": "true"
       }
     }
   },

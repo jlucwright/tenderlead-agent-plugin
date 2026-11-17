@@ -13,10 +13,12 @@ Published by Studea Limited. Product: [tenderlead](https://tenderlead.co.uk). Su
 Read your TenderLead brief, find UK tenders and review saved decisions.
 
 ```sh
-gemini extensions install https://github.com/jlucwright/tenderlead-agent-plugin --ref v1.0.0
+gemini extensions install https://github.com/jlucwright/tenderlead-agent-plugin --ref v1.0.1
 ```
 
 Start Gemini CLI and use `/mcp auth tenderlead` to sign in through the browser when needed. A TenderLead account with access to the requested records and the applicable service plan is required. Installation does not grant account access.
+
+Run the auth command explicitly after installation. Automatic OAuth is disabled so the configured permission scopes are used. Gemini CLI 0.68.0 completed browser OAuth and a protected read with a fictional QA account on 17 November 2026. Gemini model authentication is separate; use a supported sign-in method or a Gemini API key. A billing-disabled Google project was used for these connection checks, with no model generation.
 
 This Gemini extension uses `https://tenderlead.co.uk/mcp` with an explicit read-only tool allowlist. It exposes `get_daily_brief`, `search_tenders`, `get_tender_decision`. The client and model service process the records you request under their data settings.
 
