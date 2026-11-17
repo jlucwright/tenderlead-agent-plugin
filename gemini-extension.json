@@ -1,0 +1,23 @@
+{
+  "name": "tenderlead",
+  "version": "1.0.0",
+  "description": "Read your TenderLead brief, find UK tenders and review saved decisions.",
+  "mcpServers": {
+    "tenderlead": {
+      "httpUrl": "https://tenderlead.co.uk/mcp",
+      "includeTools": [
+        "get_daily_brief",
+        "search_tenders",
+        "get_tender_decision"
+      ],
+      "oauth": {
+        "enabled": true,
+        "scopes": [
+          "briefs:read",
+          "tenders:read"
+        ]
+      }
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

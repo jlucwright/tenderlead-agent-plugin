@@ -4,15 +4,29 @@ Review supplied UK tender documents against a supplier profile before a BID or S
 
 Published by Studea Limited. Product: [tenderlead](https://tenderlead.co.uk). Support: hello@tenderlead.co.uk.
 
-## Install
+## Gemini CLI
+
+Read your TenderLead brief, find UK tenders and review saved decisions.
+
+```sh
+gemini extensions install https://github.com/jlucwright/tenderlead-agent-plugin --ref v1.0.0
+```
+
+Start Gemini CLI and use `/mcp auth tenderlead` to sign in through the browser when needed. A TenderLead account with access to the requested records and the applicable service plan is required. Installation does not grant account access.
+
+This Gemini extension uses `https://tenderlead.co.uk/mcp` with an explicit read-only tool allowlist. It exposes `get_daily_brief`, `search_tenders`, `get_tender_decision`. The client and model service process the records you request under their data settings.
+
+`gemini-extension.json` and `GEMINI.md` configure Gemini CLI. The existing Agent Plugin files and skills below retain their separate client-specific scope.
+
+## Cursor and Agent Plugins installation
 
 Import this Git repository as an Agent Plugin in Cursor or another compatible client. The package contains the `tenderlead-bid-review` skill. It has no install scripts, hooks, dependencies or bundled credentials. Material used with Cursor remains subject to the model service and account settings; this package does not upload it to TenderLead.
 
 Cursor supports the root `plugin.json` Agent Plugins format. Use [Cursor’s plugin installation and management guidance](https://cursor.com/docs/plugins) for your account; an official Marketplace listing requires Cursor review. The community Cursor Directory listing is separate.
 
-## Scope
+## Cursor skill scope
 
-This is a skills-only package. It does not install an MCP connection or sign in to the product. Prepare and review supplied material in the workspace, then use the product’s normal review flow for account changes. No live tender lookup, bid submission or paid account access is included.
+The Cursor and portable Agent Plugin configuration is skills-only. It does not install an MCP connection or sign in to the product. Prepare and review supplied material in the workspace, then use the product’s normal review flow for account changes. No live tender lookup, bid submission or paid account access is included.
 
 ## Package layout
 
