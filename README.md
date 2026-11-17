@@ -4,6 +4,10 @@ Review supplied UK tender documents against a supplier profile before a BID or S
 
 Published by Studea Limited. Product: [tenderlead](https://tenderlead.co.uk). Support: hello@tenderlead.co.uk.
 
+## Cline, VS Code and GitHub Copilot
+
+[Installation commands, VS Code link and native Copilot configuration](clients/README.md). Browser OAuth and authorised product access are required.
+
 ## Gemini CLI
 
 Read your TenderLead brief, find UK tenders and review saved decisions.

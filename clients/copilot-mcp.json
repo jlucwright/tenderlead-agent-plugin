@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "tenderlead": {
+      "type": "http",
+      "url": "https://tenderlead.co.uk/mcp",
+      "tools": [
+        "get_daily_brief",
+        "search_tenders",
+        "get_tender_decision"
+      ]
+    }
+  }
+}
